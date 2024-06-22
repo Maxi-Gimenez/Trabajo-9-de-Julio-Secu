@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #23272E;
+
+    color: #fff;
+}
+
+.titulo{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.7rem;
+
+    &>span{
+        color: #11d854;
+        text-wrap: balance;
+        margin: 0px 10px;
+    }
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 80vh;
+}
+
+
+.item{
+    width: 300px;
+    height: 150px;
+    margin: 15px;
+
+    border: 1px solid #fff3;
+    border-radius: 8px;
+    position: relative;
+}
+
+.geografia{
+    background-image: url("../img/Tucumanverano2022.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &>p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+}
+
+.matematica{
+    background-image: url("../img/relieve.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &>p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.historia{
+    background-image: url("../img/Tucumán_Casa_de_la_Independencia.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &>p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+
+
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background: linear-gradient(to top, #11111199 30%, transparent);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.nav-li{
+    margin: 5px 15px;
+    list-style: none;
+
+    &>a{
+        text-decoration: none;
+        color: #fff;
+    }&>a:hover{color: #11d854;}
+}
